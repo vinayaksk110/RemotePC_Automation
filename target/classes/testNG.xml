@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Remote PC Automation">
+
+	<listeners>
+		<listener class-name="remotePC.qa.ExtentReportListener.ExtentReporterNG" />
+	</listeners>
+
+
+	<test name="Remote PC App Test Cases">
+		<classes>
+			<class name="remotePC.qa.testcases.LoginPageRPCTest"></class>
+			
+		</classes>
+	</test>
+</suite>

@@ -1,4 +1,4 @@
-package Jav;
+package JavaPrograms;
 
 /**
  * @author Vinayak

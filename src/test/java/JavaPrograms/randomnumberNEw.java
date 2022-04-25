@@ -1,4 +1,4 @@
-package Jav;
+package JavaPrograms;
 
 public class randomnumberNEw {
 	public static void main(String[] args) {

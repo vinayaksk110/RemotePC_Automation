@@ -19,7 +19,7 @@ public class webtable {
 		driver.get("https://demo.guru99.com/test/web-table-element.php");
 		
 		List<WebElement> companyList =  driver.findElements(By.xpath("//*[@id='leftcontainer']/table/tbody/tr/td[1]"));
-		
+//		List<WebElement> companyList =  driver.findElements(By.xpath("//*[@id='leftcontainer']/table/tbody/tr[2]/td[1]"));
 		System.out.println(companyList.size());
 		
 		for (int i =0;i<companyList.size();i++) {

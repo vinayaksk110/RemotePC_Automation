@@ -77,12 +77,13 @@
 	<version>1.0-beta</version>
 	</dependency>
 		
+	<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
 	<dependency>
-	<groupId>io.github.bonigarcia</groupId>
-	<artifactId>webdrivermanager</artifactId>
-	<version>3.6.2</version>
-	<scope>compile</scope>
+    <groupId>io.github.bonigarcia</groupId>
+    <artifactId>webdrivermanager</artifactId>
+    <version>5.0.3</version>
 	</dependency>
+
 	
 	<!-- https://mvnrepository.com/artifact/com.relevantcodes/extentreports -->
 	<dependency>

@@ -5,12 +5,9 @@
     <classes>
       <class name="remotePC.qa.testcases.LoginPageRPCTest">
         <methods>
-          <include name="EndReport"/>
           <include name="teardown"/>
-          <include name="setup"/>
           <include name="loginToConsumerAccount"/>
-          <include name="Invalidlogin"/>
-          <include name="setExtentReport"/>
+          <include name="setup"/>
         </methods>
       </class> <!-- remotePC.qa.testcases.LoginPageRPCTest -->
     </classes>

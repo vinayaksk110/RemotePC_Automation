@@ -8,6 +8,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import remotePC.qa.utils.XLS_Reader;
 
 public class TestbaseRPC {
@@ -15,7 +16,7 @@ public class TestbaseRPC {
 	public static WebDriver driver;
 	public static ExtentReports extent;
 	public static ExtentTest extentTest;
-	public static XLS_Reader reader = new XLS_Reader("..\\RemotePCAutomation\\src\\main\\java\\remotePC\\qa\\utils\\remotepc.xlsx");
+	public static XLS_Reader reader = new XLS_Reader("..\\RemotePC_Automation1\\src\\main\\java\\remotePC\\qa\\utils\\remotepc.xlsx");
 	
 	public static void Initialization() {
 		String browser = reader.getCellData("URL", 1, 3);
@@ -24,10 +25,12 @@ public class TestbaseRPC {
 		
 		try {
 			if(browser.equals("Chrome")) {
-				System.setProperty("webdriver.chrome.driver", "..\\RemotePCAutomation\\src\\main\\java\\remotePC\\qa\\utils\\drivers\\chromedriver.exe");
+				WebDriverManager.chromedriver().setup();
+//				System.setProperty("webdriver.chrome.driver", "..\\RemotePCAutomation\\src\\main\\java\\remotePC\\qa\\utils\\drivers\\chromedriver.exe");
 				driver = new ChromeDriver();
 			}else if (browser.equals("Firefox")) {
-				System.setProperty("webdriver.gecko.driver", "..\\RemotePCAutomation\\src\\main\\java\\remotePC\\qa\\utils\\drivers\\geckodriver.exe");
+				WebDriverManager.firefoxdriver().setup();
+//				System.setProperty("webdriver.gecko.driver", "..\\RemotePCAutomation\\src\\main\\java\\remotePC\\qa\\utils\\drivers\\geckodriver.exe");
 				driver = new FirefoxDriver();
 			}
 		}catch(Exception e) {

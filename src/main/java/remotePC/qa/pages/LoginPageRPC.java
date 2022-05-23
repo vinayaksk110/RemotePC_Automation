@@ -35,7 +35,7 @@ public class LoginPageRPC extends TestbaseRPC {
 	}
 	
 	public void EmailTextField(String email) {
-		loginEmail.sendKeys(email);;
+		loginEmail.sendKeys(email);
 	}
 	
 	public void PasswordTextField(String pass) {

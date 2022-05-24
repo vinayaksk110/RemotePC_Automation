@@ -15,6 +15,7 @@ public class HashsetExample {
 		gadgets.add("keyboard");
 		gadgets.add("charger");
 		System.out.println(gadgets);
+		System.out.println(gadgets.contains("mouse"));
 		gadgets.remove("mobile");
 		System.out.println(gadgets);
 	}

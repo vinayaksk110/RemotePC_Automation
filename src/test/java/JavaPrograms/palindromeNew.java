@@ -12,8 +12,8 @@ public class palindromeNew {
 		int b = num;
 		
 		while (b>0) {
-			int r=b%10;
-			rev=(rev*10)+r;
+			int rem=b%10;
+			rev=(rev*10)+rem;
 			b=b/10;
 		}
 		

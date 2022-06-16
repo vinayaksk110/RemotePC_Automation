@@ -17,6 +17,7 @@ public class DuplicateCharInAString {
 		for (char hased : St) {
 			if (c.add(hased) == false) {
 				System.out.print(hased + " ");
+				
 			}
 		}
 	}

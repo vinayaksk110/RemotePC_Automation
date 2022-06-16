@@ -15,7 +15,7 @@ public class factorialNew {
 		}
 		System.out.println(a);
 		
-		System.out.println("---------------------*------------------------------");
+		System.out.println("---------------------*---------------------");
 		System.out.println(facto(no));
 		
 		sc.close();
